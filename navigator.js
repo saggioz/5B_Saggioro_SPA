@@ -24,3 +24,4 @@ export const createNavigator = (parentElement) => {
     window.addEventListener('popstate', render);
     render();
 }
+
