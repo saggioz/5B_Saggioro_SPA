@@ -15,30 +15,684 @@
    <div id="container" class="container">
       <div id="home" class="page">
          <div class="row">Questa è la home del sito</div>
-         <div class="row"><a href="#pagina2">Questo è un link a pagina 2</a></div>
+         <div class="row"><a href="#pagina2">Lezione sui diagrammi di flusso</a></div>
          <div class="row"><a href="#pagina3">Questo è un link a pagina 3</a></div>  
          <div class="row"><a href="#pagina4">Questo è un link a pagina 4</a></div>               
       </div>
       <div id="pagina2" class="page">
          <div class="row"><a href="#pagina1">Questo è il link alla home del sito</a></div>
-         <div class="row">Questo è il contenuto di pagina 2</div>         
+         <div class="row">
+            <h1>Diagrammi di flusso</h1>
+            <strong>Gli algoritmi</strong>
+            <p><strong>Un programma per computer</strong>&nbsp;&egrave; un insieme di istruzioni codificate che il computer esegue per svolgere uno o pi&ugrave; determinati compiti. Si ricorda che un programma &egrave; memorizzato nella memoria centrale, viene eseguito dalla CPU, e funziona mediante l&rsquo;elaborazione di dati ed informazioni, che riceve dal mondo esterno tramite le periferiche di INPUT, come ad esempio la tastiera il mouse, e di OUTPUT, come ad esempio il monitor.&nbsp;</p>
+
+
+
+<p>Le istruzioni di un programma eseguono un algoritmo, cio&egrave; una sequenza di istruzioni matematiche e logiche che permettono di ottenere un risultato partendo da dei dati e delle informazioni. I programmi pi&ugrave; complessi possono comprendere anche pi&ugrave; algoritmi che collaborano tra loro per svolgere operazioni complesse.</p>
+
+
+
+<p>Ricordiamo le 6 caratteristiche di un algoritmo:</p>
+
+
+
+<p>&ndash;&nbsp;<strong>correttezza</strong>: deve funzionare correttamente;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>generalit&agrave;</strong>: non deve dipendere da un set di dati particolare;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>finitezza</strong>: deve avere un numero finito di istruzioni per terminare;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>efficienza</strong>: non deve fare operazioni inutili;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>non ambiguit&agrave;</strong>: le istruzioni non devono essere ambigue o contradditorie;</p>
+
+
+
+<p><strong>&ndash; completezza</strong>: devono essere considerati tutti i casi possibili;</p>
+
+
+
+<p>Prima di poter scrivere un programma per computer &egrave; necessario quindi imparare a scrivere algoritmi, capirne le logiche di progettazione, imparare e gestire i dati e la loro elaborazione.</p>
+
+
+
+<p>Per questa ragione possiamo usare i diagrammi di flusso.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Diagrammi di flusso</strong></h2>
+
+
+
+<p>I diagrammi di flusso prevedono quattro simboli che indicano le quattro operazioni fondamentali di un algoritmo:</p>
+
+
+
+<p>&ndash;&nbsp;<strong>inizio</strong>&nbsp;o&nbsp;<strong>fine</strong>;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>input</strong>&nbsp;o&nbsp;<strong>output</strong>;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>assegnazione</strong>&nbsp;e/o&nbsp;<strong>calcolo</strong>&nbsp;di espressioni;</p>
+
+
+
+<p>&ndash; verifica di&nbsp;<strong>condizioni</strong>.</p>
+
+
+
+<p>Tutti i simboli sono connessi tra loro da frecce direzionali.</p>
+
+
+
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="390" height="490" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28.png" alt="" class="wp-image-452" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28.png 390w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28-239x300.png 239w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28-230x289.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-28-350x440.png 350w" sizes="(max-width: 390px) 100vw, 390px"/></figure>
+
+
+
+<p>Tutti i simboli hanno un solo connettore in ingresso ed uno solo in uscita, tranne la condizione che ha due connettori in uscita.&nbsp;</p>
+
+
+
+<p>Come vedremo, possiamo rappresentare con questi quattro simboli qualsiasi programma per computer<a href="applewebdata://CAC4C9B7-F2B6-415E-92E1-EADAB6B00367#_ftn1"><sup>[1]</sup></a>.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Esempio: calcolo della somma di due numeri.</strong></h3>
+
+
+
+<p>Questo programma richiede in input due numeri a e b e restituisce un risultato c pari ad a+b.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="748" height="1024" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-748x1024.png" alt="" class="wp-image-453" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-748x1024.png 748w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-219x300.png 219w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-768x1052.png 768w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-230x315.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-350x479.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29-480x657.png 480w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-29.png 818w" sizes="(max-width: 748px) 100vw, 748px"/></figure>
+
+
+
+<p>Come si vede l&rsquo;utente interagisce con gli input output (parallelogramma), mentre la memoria del computer memorizza valori immessi in input (parallelogramma) oppure calcolati. Inoltre la memoria del computer contiene i valori inviati all&rsquo;utente tramite output.&nbsp;</p>
+
+
+
+<p>Per memorizzare valori introduciamo il concetto di&nbsp;<strong>variabile</strong>: una variabile &egrave; una area di memoria, identificata con un nome (detto&nbsp;<strong>identificatore</strong>, ad esempio &ldquo;a&rdquo; o &ldquo;b&rdquo;) che contiene un&nbsp;<strong>valore</strong>. Questo valore pu&ograve; cambiare anche nel corso del programma, per questo si chiama appunto &ldquo;variabile&rdquo;.</p>
+
+
+
+<p>E&rsquo; l&rsquo;utente che stabilisce il valore della variabile, quindi il programma deve funzionare senza conoscere il valore della variabile, per rispettare il principio di generalit&agrave;.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Esempio: pari o dispari</strong></h3>
+
+
+
+<p>Questo programma richiede un numero a, e dice se &egrave; pari o dispari.</p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="544" height="944" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30.png" alt="" class="wp-image-454" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30.png 544w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30-173x300.png 173w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30-230x399.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30-350x607.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-30-480x833.png 480w" sizes="(max-width: 544px) 100vw, 544px"/></figure>
+
+
+
+<p>Come si vede, dopo l&rsquo;input, il programma effettua una verifica: &ldquo;a%2==0&rdquo;. Il simbolo &ldquo;%&rdquo; indica il resto della divisione, mentre &ldquo;==&rdquo; indica un confronto di uguaglianza. Questa espressione &egrave; VERA se a % 2 &egrave; uguale a 0, altrimenti &egrave; FALSA. Ad esempio, con a=4 l&rsquo;espressione &egrave; vera: a%2 &egrave; infatti uguale a 0. Invece con a=5, l&rsquo;espressione &egrave; FALSA.</p>
+
+
+
+<p>Come si vede, vengono rispettate tutte le caratteristiche di un algoritmo:</p>
+
+
+
+<p>&ndash;&nbsp;<strong>correttezza</strong>: qualsiasi sia il numero inserito, il risultato &egrave; corretto;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>generalit&agrave;</strong>: l&rsquo;algoritmo non dipende da un particolare input;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>finitezza</strong>: l&rsquo;algoritmo in qualsiasi caso termina in un numero finito di istruzioni;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>efficienza</strong>: l&rsquo;algoritmo non si perde in inutili calcoli.</p>
+
+
+
+<p>&ndash;&nbsp;<strong>non ambiguit&agrave;</strong>: non ci sono contraddizioni;</p>
+
+
+
+<p><strong>&ndash; completezza</strong>: sono considerati tutti i casi possibili;</p>
+
+
+
+<p><strong>Esempio: conta fino a n</strong></p>
+
+
+
+<p>In questo programma chiediamo all&rsquo;utente un numero n, ma stavolta stampiamo tutti i valori da 1 a n.</p>
+
+
+
+<p>Stavolta non basta calcolare una espressione, ma dobbiamo usare un contatore e soprattutto un ciclo.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="380" height="902" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31.png" alt="" class="wp-image-455" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31.png 380w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31-126x300.png 126w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31-230x546.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-31-350x831.png 350w" sizes="auto, (max-width: 380px) 100vw, 380px"/></figure>
+
+
+
+<p>Vediamo i passaggi:</p>
+
+
+
+<p>1) Viene richiesto n</p>
+
+
+
+<p>2) La variabile i viene inizializzata ad 1.</p>
+
+
+
+<p>3) La variabile i viene stampata.</p>
+
+
+
+<p>4) i viene incrementata di 1.</p>
+
+
+
+<p>5) Se i &egrave; ancora minore o uguale a n, si torna al punto 3, altrimenti si va al punto 6</p>
+
+
+
+<p>6) fine.</p>
+
+
+
+<p>Ad esempio per n= 5 avremo:</p>
+
+
+
+<p>i=1 -&gt; si torna al punto 3 perch&egrave; i&lt;=5</p>
+
+
+
+<p>i=2 -&gt; si torna al punto 3 perch&egrave; i&lt;=5</p>
+
+
+
+<p>i=3 -&gt; si torna al punto 3 perch&egrave; i&lt;=5</p>
+
+
+
+<p>i=4 -&gt; si torna al punto 3 perch&egrave; i&lt;=5</p>
+
+
+
+<p>i=5 -&gt; si torna al punto 3 perch&egrave; i&lt;=5</p>
+
+
+
+<p>i=6 -&gt; si va al punto 7, perch&egrave; i &gt; 5</p>
+
+
+
+<p>I punti 3-4-5 vengono effettuati molte volte: per la precisione n volte.&nbsp;</p>
+
+
+
+<p>Ogni ripetizione si chiama&nbsp;<strong>ciclo</strong>.</p>
+
+
+
+<p>Il numero di cicli &egrave; determinato da n.&nbsp;</p>
+
+
+
+<p>Con n=10 avremo 10 cicli, con n=1000 avremo 1000 cicli e cos&igrave; via. E&rsquo; possibile anche avere milioni di cicli, scegliendo n molto grande.</p>
+
+
+
+<p>Come possiamo vedere anche un algoritmo semplice, con solo 7 passaggi come in questo diagramma di flusso, pu&ograve; portare all&rsquo;esecuzione, grazie ai cicli, di migliaia o milioni di cicli.</p>
+
+
+
+<p>Tuttavia l&rsquo;algoritmo mantiene sempre le sue quattro caratteristiche:</p>
+
+
+
+<p>&ndash;&nbsp;<strong>correttezza</strong>: qualsiasi sia il numero inserito, il risultato &egrave; corretto;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>generalit&agrave;</strong>: l&rsquo;algoritmo non dipende da un particolare input;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>finitezza</strong>: l&rsquo;algoritmo in qualsiasi caso termina in un numero finito di istruzioni;</p>
+
+
+
+<p>&ndash;&nbsp;<strong>efficienza</strong>: l&rsquo;algoritmo non si perde in inutili calcoli.</p>
+
+
+
+<p>&ndash;&nbsp;<strong>non ambiguit&agrave;</strong>: non ci sono contraddizioni;</p>
+
+
+
+<p><strong>&ndash; completezza</strong>: sono considerati tutti i casi possibili;</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<p><a href="applewebdata://CAC4C9B7-F2B6-415E-92E1-EADAB6B00367#_ftnref1"><sup>[1]</sup></a>&nbsp;Come vedremo questa affermazione &egrave; alla base del teorema fondamentale della programmazione, il teorema di Bohm-Jacopini.</p>
+         </div>         
          <div class="row"><a href="#pagina3">Questo è un link a pagina 3</a></div>
          <div class="row"><a href="#pagina4">Questo è un link a pagina 4</a></div>                  
       </div>
       <div id="pagina3" class="page">         
          <div class="row"><a href="#pagina1">Questo è il link alla home del sito</a></div>
          <div class="row"><a href="#pagina2">Questo è un link a pagina 2</a></div>                  
-         <div class="row">Questo è il contenuto di pagina 3</div>
+         <div class="row">
+            <h1>Semafori</h1>
+            <strong>Premessa</strong>
+            <p>Come sappiamo due funzioni in esecuzione in parallelo con memoria condivisa possono avere problemi di interferenza di sincronizzazione (dovuti a problematiche legate al tempo) e di competizione (dovuti a problematiche legate ai dati). Questo avviene sia quando siamo in uno scenario di interleaving (esecuzione concorrente) che di overlapping (esecuzione parallela).</p>
+
+
+
+<p>Dal punto di vista pi&ugrave; formale quando si scrive una applicazione in programmazione parallela, occorre soddisfare le condizioni di Bernstein:</p>
+
+
+
+<p><strong>R(f1)&nbsp;</strong><strong>&#8898;&nbsp;</strong><strong>R(F2) =&nbsp;</strong><strong>&empty;</strong></p>
+
+
+
+<p><strong>R(F)&nbsp;</strong><strong>&#8898;&nbsp;</strong><strong>D(F2) =&nbsp;</strong><strong>&empty;</strong></p>
+
+
+
+<p><strong>D(F1)&nbsp;</strong><strong>&#8898;&nbsp;</strong><strong>R(F2) =&nbsp;</strong><strong>&empty;</strong></p>
+
+
+
+<p>dove f1 e f2 sono le due funzioni parallele, R il rango e D il dominio delle funzioni. Pi&ugrave; semplicemente, una funzione che scrive delle variabili non pu&ograve; essere eseguita in parallelo di una funzione che legge o scrive lo stesso insieme di variabili.</p>
+
+
+
+<p>Compito del programmatore &egrave; quindi scrivere delle funzioni parallele che garantiscano <strong>mutua esclusione</strong> ed impediscano <strong>starvation</strong> (applicazione sempre in attesa) e <strong>deadlock</strong> (dipendenze cicliche).&nbsp;</p>
+
+
+
+<p>In conclusione le applicazioni parallele devono garantire la stessa correttezza che avrebbero se fossero eseguite come delle applicazioni sequenziali.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Sezione critica</strong></h2>
+
+
+
+<p>Per risolvere i problemi di parallelismo introduciamo il concetto di sezione critica.</p>
+
+
+
+<p>Una sezione critica &egrave; una particolare porzione del codice che pu&ograve; essere eseguita solo da un limitato numero di thread in contemporanea, o uno soltanto. Questo concetto si applica esclusivamente ad applicazioni a memoria condivisa (come i thread, ma non come i processi).</p>
+
+
+
+<p>La sezione critica garantisce quindi che una sola funzione (o un numero limitato) accedano a risorse condivise, per tutto il tempo necessario ad usare la risorsa condivisa, senza rischi di interferenza. Si veda in figura uno schema di accesso con un solo processo nella sezione critica.</p>
+
+
+
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="632" height="556" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-17.png" alt="" class="wp-image-243" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-17.png 632w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-17-300x264.png 300w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-17-230x202.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-17-350x308.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-17-480x422.png 480w" sizes="(max-width: 632px) 100vw, 632px"/></figure>
+
+
+
+<p>Sono molti gli esempi nel mondo reale che presentano una qualche analogia con il concetto di sezione critica:</p>
+
+
+
+<p>&ndash; un supermercato con una cassa: i clienti che hanno riempito il carrello in modo indipendente si devono mettere in coda alla cassa, venendo serviti uno solo alla volta. Dopo aver pagato tornano indipendenti.</p>
+
+
+
+<p>&ndash; un ufficio postale con sportelli dove occorre prendere un numero di prenotazione, ed attendere il proprio turno venendo chiamati dal primo sportello libero.</p>
+
+
+
+<p>&ndash; il casello autostradale con uno o pi&ugrave; valichi di accesso, dove si formano code parallele per ciascuna corsia.</p>
+
+
+
+<p>Nel codice si ha una sezione critica quando pi&ugrave; thread hanno bisogno di accedere ad una variabile condivisa, ad esempio per poter modificare quella variabile. Ipotizziamo di avere una funzione che sar&agrave; eseguita da due thread che eseguono lo stesso codice:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>void somma(int *b, int a) {
+   int sum = a + *b;
+   *b = sum;   
+}
+
+int main() {
+  int b = 3;
+   thread thread0 = thread(somma, &amp;b, 5);
+   thread thread1 = thread(somma, &amp;b, 2);
+   thread0.join();
+   thread1.join();
+   return 0;
+}
+</code></pre></div>
+
+
+
+<p>La variabile b &egrave; letta e scritta da entrambi i thread, in istruzioni differenti. Come si pu&ograve; vedere il rango delle due funzioni coincide quindi ci si deve aspettare una qualche interferenza. Ad esempio potrebbe essere eseguita questa sequenza di istruzioni:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>thread 0</td><td>&nbsp;&nbsp;&nbsp;int sum = a + *b;</td></tr><tr><td>thread 1</td><td>&nbsp;&nbsp;&nbsp;int sum = a + *b;</td></tr><tr><td>thread 1</td><td>&nbsp;&nbsp;&nbsp;*b = sum;&nbsp;&nbsp;</td></tr><tr><td>thread 0</td><td>&nbsp;&nbsp;&nbsp;*b = sum;</td></tr></tbody></table></figure>
+
+
+
+<p>Il valore finale di b sarebbe 8 mentre gli effetti dell&rsquo;ultima istruzione del thread 1 completamente annullati. Un&rsquo;altra esecuzione (si ricorda che lo scheduling non &egrave; deterministico) l&rsquo;ordine di esecuzione delle singole istruzioni potrebbe essere:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>thread 0</td><td>&nbsp;&nbsp;&nbsp;int sum = a + *b;</td></tr><tr><td>thread 1</td><td>&nbsp;&nbsp;&nbsp;int sum = a + *b;</td></tr><tr><td>thread 0</td><td>&nbsp;&nbsp;&nbsp;*b = sum;&nbsp;&nbsp;</td></tr><tr><td>thread 1</td><td>&nbsp;&nbsp;&nbsp;*b = sum;</td></tr></tbody></table></figure>
+
+
+
+<p>In questo caso b varrebbe 5 e sarebbe il thread 0 ad essere penalizzato. Gi&agrave; con un caso molto semplice, con una funzione di appena due righe di codice, possiamo avere comportamenti del tutto inaspettati. </p>
+
+
+
+<p>La sezione critica nasce per questo: impedire che l&rsquo;esecuzione sia &ldquo;imprevedibile&rdquo; e che porti quindi a risultati diversi da quelli attesi. </p>
+
+
+
+<p>Per risolvere questo problema ci si affida ad una libreria di sistema operativo, detta semaforo. Sar&agrave; il sistema operativo che tramite il semaforo regoler&agrave; il traffico in entrata ed uscita dalla sezione critica.</p>
+
+
+
+<p>Vediamolo in dettaglio.</p>
+
+
+
+<h2 class="wp-block-heading">Mutex (o semaforo binario)</h2>
+
+
+
+<p>Il semaforo binario, detto anche mutex, &egrave; una variabile che pu&ograve; essere modificata da un solo thread alla volta. E&rsquo; una variabile gestita dal sistema operativo, e il thread in esecuzione non ha quindi controllo sulla scrittura del mutex. Pu&ograve; semplicemente cercare di acquisirlo (lock), restando in attesa se occupato, e rilasciarlo, liberandolo per il thread successivo.</p>
+
+
+
+<p>In pratica si entra nella sezione critica eseguendo un lock sul semaforo (che diventa &ldquo;rosso&rdquo;), si esegue la sequenza di operazioni critiche, e poi si rilascia il lock (il semaforo diventa &ldquo;verde&rdquo;).</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>mutex mtx;
+...
+
+mtx.lock(); 
+/*
+critical istructions
+*/
+mtx.unlock();
+
+</code></pre></div>
+
+
+
+<p>Se un thread richieder&agrave; il semaforo mentre il primo &egrave; ancora dentro la sezione critica, lo trover&agrave; &ldquo;rosso&rdquo;, quindi si fermer&agrave; ed attender&agrave; che diventi verde. E&rsquo; il sistema operativo che fornisce questa funzionalit&agrave;: tutti i thread che richiedono il lock del mutex sono messi in attesa che il semaforo sia sbloccato. Inoltre il sistema operativo garantisce che l&rsquo;operazione avvenga in perfetta sincronia per tutti i processori, quindi anche in caso di richiesta contemporanea di un semaforo da parte di pi&ugrave; processori, tutte le parallelizzazioni sono sospese.&nbsp;</p>
+
+
+
+<p>Il codice precedente diventa quindi:</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>mutex mtx;
+
+void somma(int *b, int a) {
+   mtx.lock();
+   int sum = a + *b;
+   *b = sum;  
+   mtx.unlock(); 
+}
+
+int main() {
+  int b = 3;
+   thread thread0 = thread(somma, &amp;b, 5);
+   thread thread1 = thread(somma, &amp;b, 2);
+   thread0.join();
+   thread1.join();
+   return 0;
+}
+</code></pre></div>
+
+
+
+<p>Se si esegue questo codice si otterr&agrave; che solo uno dei thread potr&agrave; eseguire la somma.</p>
+
+
+
+<h2 class="wp-block-heading">Semaforo di Dijkstra (semaforo generalizzato)</h2>
+
+
+
+<p>Il&nbsp;<strong>semaforo generalizzato</strong>&nbsp;(o semaforo di&nbsp;<strong>Dijkstra</strong><a href="applewebdata://06300BE2-69BF-44EF-AFA5-C88477602ADE#_ftn1"><sup>[1]</sup></a>) &egrave; una estensione del semaforo binario che permette l&rsquo;accesso alla sezione critica da parte di pi&ugrave; di un thread alla volta. Operativamente il semaforo prevede un valore numerico (condiviso tra i thread) ed una coda di attesa. In C/C++ &egrave; gestita tramite due funzioni, P e V, che consentono l&rsquo;accesso alla sezione critica ai thread.</p>
+
+
+
+<p>P: questa funzione, eseguita dal thread, richiede l&rsquo;accesso alla sezione critica.</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>void p(int *semaphore) {  
+  if (*semaphore == 0) {
+    unique_lock&lt;mutex&gt; lock(m);
+    cv.wait(lock);    
+  }
+  (*semaphore)--;  
+}</code></pre></div>
+
+
+
+<p>Unique lock e wait sono funzioni di sistema operativo.<a href="applewebdata://06300BE2-69BF-44EF-AFA5-C88477602ADE#_ftn2"><sup>[2]</sup></a></p>
+
+
+
+<p>Quando un thread vuole accedere alla sezione critica esegue una operazione&nbsp;<strong>p(int *semaphore)</strong>&nbsp;dove semaphore &egrave; la variabile condivisa che contiene il numero di thread attualmente disponibili. Per prima cosa diminuisce di 1 il valore del semaforo. Se questo valore &egrave; sotto 0, il thread si mette in attesa.</p>
+
+
+
+<div class="hcb_wrap"><pre class="prism line-numbers lang-cpp" data-lang="C++"><code>void v(int *semaphore) {    
+  if ((*semaphore) == 0) {
+    cv.notify_one();    
+  }
+  (*semaphore)++;  
+}
+</code></pre></div>
+
+
+
+<p>Quando un thread esce dalla sezione critica, esegue una operazione&nbsp;<strong>v(int *semaphore)</strong>&nbsp;che aumenta di 1 il valore del semaforo. Se il valore &egrave; uguale a 0, il sistema operativo toglie il primo thread in attesa in coda e lo fa entrare in sezione critica.&nbsp;</p>
+
+
+
+<p>Poniamo di avere 3 thread ed un semaforo pari a 2.&nbsp;</p>
+
+
+
+<p>Questo significa che solo 2 thread in esecuzione possono entrare nella sezione critica. Il terzo thread si metter&agrave; in coda attendendo l&rsquo;uscita di un qualsiasi altro thread nella sezione critica.</p>
+
+
+
+<p>Una analogia col mondo reale &egrave; quella dell&rsquo;ufficio postale, con ad esempio 3 sportelli che servono 3 persone, e una persona in attesa (col numero di prenotazione) che attende che si liberi il primo sportello.</p>
+
+
+
+<p>Qui un esempio di semaforo di valore 3.</p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="598" height="176" src="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-19.png" alt="" class="wp-image-247" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/07/image-19.png 598w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-19-300x88.png 300w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-19-230x68.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-19-350x103.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/07/image-19-480x141.png 480w" sizes="(max-width: 598px) 100vw, 598px"/></figure>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<p><a href="applewebdata://06300BE2-69BF-44EF-AFA5-C88477602ADE#_ftnref1"><sup>[1]</sup></a>&nbsp;Dijikstra &egrave; stato uno dei pi&ugrave; grandi informatici, inventore oltre che del semaforo (1965) anche del pi&ugrave; noto algoritmo che prende il suo nome (che governa la distribuzione dei pacchetti nella rete Internet) e della teoria sulla verifica formale di un algoritmo. E&rsquo; noto per aver inventato (insieme a Wirth) la programmazione strutturata e infine per i suoi aforismi, come la famosa critica alla programmazione ad oggetti.&nbsp;</p>
+
+
+
+<p><a href="applewebdata://06300BE2-69BF-44EF-AFA5-C88477602ADE#_ftnref2"><sup>[2]</sup></a>&nbsp;La condition variable &egrave; oggetto che con l&rsquo;istruzione wait() ferma il thread mettendolo in una coda e con l&rsquo;istruzione notify() lo riattiva.</p>
+         </div>
          <div class="row"><a href="#pagina4">Questo è un link a pagina 4</a></div>
       </div>
       <div id="pagina4" class="page">         
         <div class="row"><a href="#pagina1">Questo è il link alla home del sito</a></div>
         <div class="row"><a href="#pagina2">Questo è un link a pagina 2</a></div> 
         <div class="row"><a href="#pagina3">Questo è un link a pagina 3</a></div>                 
-        <div class="row">Questo è il contenuto di pagina 4</div>
+        <div class="row">
+            <h1>Scienza Tecnologia e Tecnica</h1>
+                <p>Per comprendere appieno il rapporto tra&nbsp;<strong>scienza, <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span> e tecnica</strong>, occorre prima di tutto definire questi termini in modo chiaro e non ambiguo.&nbsp;</p>
+
+
+
+                <p>Per capirlo partiremo dall&rsquo;antica Grecia e dai primi filosofi, perch&eacute; &egrave; a partire da loro che si &egrave; sviluppata la civilt&agrave; e il pensiero occidentale: &egrave; in quell&rsquo;epoca che sono nate le prime discipline di studio, come la matematica, la fisica, la filosofia.&nbsp;</p>
+                
+                
+                
+                <p>I primi grandi pensatori (Talete, Pitagora, Democrito) erano al contempo filosofi, matematici, scienziati, inventori. Per indicare il loro lavoro usavano spesso due parole che almeno inizialmente erano sfumature dello stesso concetto:&nbsp;<strong><em>epist&eacute;me</em></strong>&nbsp;(&ldquo;conoscenza, verit&agrave;&rdquo;) e&nbsp;<strong><em>t&eacute;chne</em></strong><em>&nbsp;(&ldquo;arte, perizia&rdquo;).&nbsp;</em>Il pensatore era infatti una specie di tuttologo, che si interessava di tutte le scienze, sia di pensiero, che pratiche.</p>
+                
+                
+                
+                <p>E&rsquo; solo a partire dal filosofo Aristotele che la distinzione si fa pi&ugrave; netta. L&rsquo;epist&eacute;me diventa il sapere astratto, una conoscenza generale del mondo senza ricadute pratiche, mentre la t&eacute;chne diventa l'&rdquo;arte, mestiere&rdquo;, ovvero il sapere concreto, che non aveva bisogno di astrazione.</p>
+                
+                
+                
+                <p>Il concetto di scienza nasce proprio dalla definizione di Aristotele: &egrave; cio&egrave; quella disciplina, o insieme di discipline, che si occupano di conoscere e comprendere la realt&agrave; tramite un qualche livello di astrazione, ovvero tramite la realizzazione di &ldquo;<strong>modelli</strong>&ldquo;, che diventano concetti generali, con una propria consistenza e coerenza, indipendente dalla loro controparte reale.&nbsp;</p>
+                
+                
+                
+                <p>Nella&nbsp;<strong>scienza</strong>&nbsp;possiamo quindi partire da una ruota ed astrarre il concetto di &ldquo;cerchio&rdquo;, e cos&igrave; via a partire dall&rsquo;esperienza reale possiamo definire le altre figure geometriche, come il triangolo, il rettangolo, ecc. Queste entit&agrave; pur proveniendo dalla realt&agrave; sono comunque idee astratte, cio&egrave; non dipendenti da una esperienza reale specifica: il cerchio &egrave; un cerchio e non dipende pi&ugrave; dal concetto di ruota, o disco, o un anello (e cos&igrave; per le altre figure). Inoltre queste idee astratte possono essere messe in relazione tra loro, e possono essere creati anche modelli complessi, che non dipendono pi&ugrave; direttamente dalla realt&agrave;, ma che ci servono per creare una nostra idea pi&ugrave; completa di cosa c&rsquo;&egrave; &ldquo;dietro&rdquo; la realt&agrave;, interconnessa con questa ma frutto comunque di deduzioni e ragionamenti, chiamate&nbsp;<strong>teorie</strong>.<a href="applewebdata://0AF71300-ED05-4E8E-9A34-8C415B1D2DE1#_ftn1"><sup>[1]</sup></a></p>
+                
+                
+                
+                <p>Ci&ograve; che chiamiamo&nbsp;<strong>tecnica</strong>&nbsp;&egrave; invece l&rsquo;insieme di attivit&agrave; di costruzione di mezzi e strumenti per svolgere determinate funzioni. La tecnica &egrave; frutto di pratica empirica, di invenzione e pu&ograve; prevedere anche conoscenze teoriche ma sempre collegate ad un fine pratico. Nella tecnica il fine &egrave;&nbsp;<strong>pratico</strong>, ovvero realizzare manufatti.</p>
+                
+                
+                
+                <p>Gli antichi egizi erano a conoscenza del teorema di Pitagora (in&nbsp;un&nbsp;triangolo&nbsp;rettangolo&nbsp;il&nbsp;quadrato&nbsp;costruitosull&rsquo;ipotenusa&nbsp;&egrave;&nbsp;la&nbsp;somma&nbsp;dei&nbsp;quadrati&nbsp;costruiti&nbsp;sui cateti) e del postulato di Euclide (due rette parallele si incontrano all&rsquo;infinito), e ne facevano largo uso per ricalcolare la suddivisione delle terre quando il Nilo esondava. Le piramidi erano costruite sempre in base alla stessa matematica, che possiamo considerare parte del loro&nbsp;<strong>bagaglio tecnico</strong>&nbsp;di conoscenza.</p>
+                
+                
+                
+                <figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="230" height="280" src="https://cipiaceinfo.it/wp-content/uploads/2024/09/image.png" alt="" class="wp-image-743"/></figure>
+                
+                
+                
+                <p>La matematica degli antichi greci si basava invece su un insieme di&nbsp;<strong>assiomi astratti</strong>&nbsp;fondamentali, da cui dedurre, tramite logica, tutti i teoremi e le leggi fondamentali, come il teorema di Pitagora e quello di Euclide. La conoscenza dei greci partiva dall&rsquo;esperienza ma era astratta e generale.&nbsp;</p>
+                
+                
+                
+                <p>Eppure in entrambe le matematiche c&rsquo;&egrave; il teorema di Pitagora. Ma in un caso &ndash; quello degli egiziani &ndash; &egrave; parte di una realt&agrave; applicata, mentre nell&rsquo;altro &ndash; quello dei greci &ndash; diventa parte di un sistema generale ovvero la geometria euclidea.&nbsp;</p>
+                
+                
+                
+                <p>Non &egrave; un dettaglio. La geometria euclidea &egrave; un sistema astratto che nella pratica non &egrave; rigorosamente valido. Pu&ograve; andare bene per fare la Piramide di Cheope e per le misure di terreni fino a qualche km, ma certamente non va bene quando le grandezze sono di migliaia di km. Se osservate un planisfero i &ldquo;meridiani&rdquo; non sono veramente paralleli tra loro ma convergono al polo Nord. Per questo i viaggi aerei intercontinentali (es. da Milano a New York) prevedono una traiettoria curva che tiene conto di questo problema. La matematica degli egizi non ci sarebbe mai arrivata a capire che la geometria euclidea &egrave; applicabile solo a parte della realt&agrave;. Quella dei greci ci &eacute; arrivata.</p>
+                
+                
+                
+                <figure class="wp-block-image size-full"><img decoding="async" width="468" height="390" src="https://cipiaceinfo.it/wp-content/uploads/2024/09/image-1.png" alt="" class="wp-image-744" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/09/image-1.png 468w, https://cipiaceinfo.it/wp-content/uploads/2024/09/image-1-300x250.png 300w, https://cipiaceinfo.it/wp-content/uploads/2024/09/image-1-230x192.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/09/image-1-350x292.png 350w" sizes="(max-width: 468px) 100vw, 468px"/></figure>
+                
+                
+                
+                <p>Da questo capiamo alcune cose.&nbsp;</p>
+                
+                
+                
+                <p>&ndash;&nbsp;<strong>che la tecnica nasce da esigenze pratiche e nasce quindi prima della scienza</strong>. L&rsquo;uomo sa creare il fuoco da 400 mila anni, e conosce la ruota da almeno 10 mila. Gli antichi Egizi conoscevano la geometria molto prima dei Greci, e ha permesso loro di costruire le Piramidi;</p>
+                
+                
+                
+                <p>&ndash;&nbsp;<strong>la scienza tuttavia &egrave; in grado di risolvere problemi non risolvibili con la sola tecnica</strong>: con una comprensione generale, non dipendente da una specifica applicazione pratica, siamo stati in grado di andare oltre i limiti della pratica sperimentale e risolvere problemi altrimenti irrisolvibili: l&rsquo;aeroplano, l&rsquo;energia atomica, l&rsquo;esplorazione spaziale.</p>
+                
+                
+                
+                <p>Riassumendo,&nbsp;<strong>scienza e tecnica quindi si differenziano per metodo</strong>&nbsp;(pratico o astratto) e&nbsp;<strong>obiettivi</strong>&nbsp;(teorie o manufatti), ma entrambe hanno in qualche modo come oggetto il sapere e la conoscenza. Moltissimi scienziati erano e sono anche tecnicamente esperti nel produrre e maneggiare strumenti utili alla ricerca scientifica e sperimentale. Ad esempio Galileo si costru&igrave; da solo il telescopio, e con quello fece le sue scoperte astronomiche. Per fare un altro esempio i ricercatori del CERN (a Ginevra) studiano le teorie sulla materia e sulle particelle con un acceleratore di particelle (una struttura circolare sotterranea lunga decine di km).</p>
+                
+                
+                
+                <figure class="wp-block-image size-full"><img decoding="async" width="486" height="216" src="https://cipiaceinfo.it/wp-content/uploads/2024/09/image-2.png" alt="" class="wp-image-745" srcset="https://cipiaceinfo.it/wp-content/uploads/2024/09/image-2.png 486w, https://cipiaceinfo.it/wp-content/uploads/2024/09/image-2-300x133.png 300w, https://cipiaceinfo.it/wp-content/uploads/2024/09/image-2-230x102.png 230w, https://cipiaceinfo.it/wp-content/uploads/2024/09/image-2-350x156.png 350w, https://cipiaceinfo.it/wp-content/uploads/2024/09/image-2-480x213.png 480w" sizes="(max-width: 486px) 100vw, 486px"/></figure>
+                
+                
+                
+                <p>Veniamo ora alla&nbsp;<strong><span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span></strong>.</p>
+                
+                
+                
+                <p>Gli antichi romani erano per molti aspetti tecnicamente avanzati (si pensi alle strade, ai ponti, agli acquedotti) ma non erano particolarmente bravi a creare modelli macchine indipendenti dalla loro applicazione pratica.&nbsp;&nbsp;Quando appresero dai greci l&rsquo;uso delle catapulte cominciarono a riprodurle partendo da quelle catturate e non dalle teorie balistiche con cui erano state progettate. In pochi decenni, facendo copie delle copie, e poi copiando ancora le proprie copie, poich&eacute; non capivano bene come facevano a funzionare le catapulte, col tempo introdussero difetti tali da renderle sempre meno efficaci fino a diventare del tutto inutili.&nbsp;</p>
+                
+                
+                
+                <p>Quindi non basta una grande capacit&agrave; tecnica, ma c&rsquo;&egrave; bisogno di una disciplina creasse dei modelli astratti dei manufatti e della pratica empirica, in modo da salvare e tramandare una &ldquo;idea&rdquo; del prodotto.&nbsp;</p>
+                
+                
+                
+                <p>La <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span> &egrave; proprio questo: &egrave; una teoria che studia, a partire dalla tecnica e dalla scienza, un insieme di modelli che possono essere utili per processi di lavorazione pratici. &Egrave; quindi sia una &ldquo;<strong>teoria della tecnica</strong>&rdquo; che una &ldquo;<strong>scienza applicata</strong>&rdquo; e va a colmare la distanza presente tra le due discipline. La <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span> infatti sfrutta i modelli della scienza per far evolvere modelli di manufatti e quindi anche la tecnica di realizzazione. Un esempio &egrave; l&rsquo;industria meccanica: le grandi scoperte sulla termodinamica hanno dato impulso alla realizzazione dei motori, dei treni, delle automobili.&nbsp;</p>
+                
+                
+                
+                <p>Ma la <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span> &egrave; una disciplina fondamentale indipendentemente dall&rsquo;esistenza di una scienza che faccia nuove scoperte. Essa infatti va a generalizzare anche le esperienze pratiche, i miglioramenti sperimentali, senza che questi vadano perduti come successo con le catapulte greche. Il telescopio di Galileo era un risultato della tecnica, la <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span> successiva a Galileo invece sfrutta la scienza dell&rsquo;ottica e i progressi tecnici insieme per modellizzare telescopi sempre pi&ugrave; potenti che poi saranno realizzati tramite tecnica specifica a partire dalla <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span>.&nbsp;</p>
+                
+                
+                
+                <p>La scienza quindi studia e realizza modelli della realt&agrave;, e li verifica sperimentalmente.</p>
+                
+                
+                
+                <p>La tecnica studia la capacit&agrave; di costruire oggetti sempre pi&ugrave; utili.</p>
+                
+                
+                
+                <p>La <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span> &egrave; una scienza applicata che studia come costruire oggetti.&nbsp;</p>
+                
+                
+                
+                <p>E&nbsp;<strong>l&rsquo;informatica</strong>?</p>
+                
+                
+                
+                <p>L&rsquo;informatica &egrave; prima di tutto una&nbsp;<strong>scienza</strong>: una scienza che studia l&rsquo;informazione e l&rsquo;elaborazione automatica dell&rsquo;informazione. In parte si sovrappone quindi alla matematica (che anch&rsquo;essa studia l&rsquo;informazione). E&rsquo; grazie a questa scienza che abbiamo oggi modelli come gli algoritmi, le strutture dati, i database, l&rsquo;intelligenza artificiale. Ma l&rsquo;informatica ci dice anche come devono essere fatti i computer, cio&egrave; gli strumenti che effettivamente elaborano l&rsquo;informazione in modo automatico, ed &egrave; quindi anche una&nbsp;<strong><span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Tecnologia&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Disciplina che studia e ricerca a livello generale sia la progettazione di manufatti, sia le strategie per realizzarli. Indica inoltre le scienze applicate ai processi di trasformazione e realizzazione di prodotti. Essa &egrave; una generalizzazione della tecnica. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&amp;lt;!-- wp:paragraph --&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>tecnologia</span></strong>.</p>
+                
+                
+                
+                <p>Cosa non &egrave; invece l&rsquo;informatica?&nbsp;<strong>Non &egrave; una tecnica</strong>&nbsp;in senso stretto, non &egrave; quindi basata sull&rsquo;esperienza pratica, per quanto ogni informatico con l&rsquo;esperienza acquisisce anche una forte <span class="glossaryLink"  aria-describedby="tt"  data-cmtooltip="&lt;div class=glossaryItemTitle&gt;Componente&lt;/div&gt;&lt;div class=glossaryItemBody&gt;&amp;lt;!-- wp:paragraph --&amp;gt;Un componente di una applicazione &egrave; un elemento autonomo del software che svolge un compito definito. Esso comunica con gli altri componenti dell&amp;#039;applicazione e pu&ograve; far parte di un modulo. &amp;lt;br/&amp;gt;&amp;lt;!-- /wp:paragraph --&amp;gt;&lt;/div&gt;"  data-gt-translate-attributes='[{"attribute":"data-cmtooltip", "format":"html"}]'  tabindex='0' role='link'>componente</span> pratica.</p>
+        </div>
      </div> 
    </div>
-   <script type="module" src="./SPA.js"></script>
+   <script type="module" src="./generale.js"></script>
 
 </body>
 
